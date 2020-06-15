@@ -24,6 +24,19 @@
 
   public static class ServiceExtensions
   {
+    public static IServiceCollection AddCreate2(this IServiceCollection services, IConfiguration configurationSection)
+    {
+      return services
+        .AddOI(configurationSection)
+        .AddCleaner()
+        .AddDevice()
+        .AddDriver()
+        .AddMotors()
+        .AddMusic()
+        .AddSchedule()
+        .AddUI();
+    }
+    
     public static IServiceCollection AddCreate2(this IServiceCollection services, Action<OISettings> configureOptions)
     {
       return services
