@@ -1,13 +1,13 @@
 ﻿namespace Create2.Sensors.Motor
 {
-    using System;
+  using System;
 
-    [Flags]
-    public enum MotorOverCurrents: byte
-    {
-        SideBrush = 1,
-        MainBrush = 4,
-        RightWheel = 8,
-        LeftWheel = 16
-    }
+  [Flags]
+  public enum MotorOverCurrents : byte
+  {
+    SideBrush = 1,
+    MainBrush = 4,
+    RightWheel = 8,
+    LeftWheel = 16
+  }
 }

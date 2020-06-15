@@ -1,11 +1,11 @@
 ﻿namespace Create2.Sensors.Battery
 {
-    using System;
+  using System;
 
-    [Flags]
-    public enum ChargingSources: byte
-    {
-        InternalCharger = 1,
-        HomeBase = 2
-    }
+  [Flags]
+  public enum ChargingSources : byte
+  {
+    InternalCharger = 1,
+    HomeBase = 2
+  }
 }

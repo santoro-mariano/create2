@@ -43,14 +43,14 @@
         .Configure<OISettings>(configurationSection)
         .AddOI();
     }
-    
+
     public static IServiceCollection AddOI(this IServiceCollection services, Action<OISettings> configureOptions)
     {
       return services
         .Configure(configureOptions)
         .AddOI();
     }
-    
+
     public static IServiceCollection AddCleaner(this IServiceCollection services)
     {
       return services
@@ -101,7 +101,7 @@
         .AddSingleton<LedsManager>()
         .AddSingleton<ButtonsSensor>();
     }
-    
+
     private static IServiceCollection AddOI(this IServiceCollection services)
     {
       return services
